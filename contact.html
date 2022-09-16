@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Day 5</title>
+        <link rel="stylesheet" href="styles/contact.css">
+    </head>
+    <body>
+        <nav>
+            <div class="navbar-left">
+                <ul>
+                    <li>
+                        <img src="assets/image/logo.png" alt="Logo">
+                    </li>
+                    <li style="font-weight:bold">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="project.html">My Project</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="navbar-right">
+                <a href="contact.html">Contact Me</a>
+            </div>
+        </nav>
+
+        <form>
+            <h2>GET IN TOUCH</h2>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email">
+            </div>
+            <div>
+                <label for="phone">Phone Number</label>
+                <input type="number" id="phone">
+            </div>
+            <div>
+                <label for="subject">Subject</label>
+                <select id="subject">
+                    <option value="" hidden></option>
+                    <option>frontEnd</option>
+                    <option>backEnd</option>
+                </select>
+            </div>
+            <div>
+                <label for="message">Your Message</label>
+                <textarea name="" id="message" cols="40" rows="4"></textarea>
+            </div>
+            <div>
+                <button type="button" onclick="submitData()">submit</button>
+            </div>
+        </form>
+        <script src="scripts/components/contact.js"></script>
+    </body>
+</html>

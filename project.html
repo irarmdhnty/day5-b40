@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Day 5</title>
+        <link rel="stylesheet" href="styles/project.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <nav>
+            <div class="navbar-left">
+                <ul>
+                    <li>
+                        <img src="assets/image/logo.png" alt="Logo">
+                    </li>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="project.html">My Project</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="navbar-right">
+                <a href="contact.html">Contact Me</a>
+            </div>
+        </nav>
+
+        <div style="background-color: #d7ddde;">
+            <form>
+                <h2>ADD MY PROJECT</h2>
+                <div>
+                    <label for="input-name">Project Name</label>
+                    <input class="input-name" type="text" id="input-name"
+                        required>
+                </div>
+                <table>
+                    <tr>
+                        <td>
+                            <div style="margin-right: 15px">
+                                <label for="start-date">Start Date</label><br>
+                                <input class="date-input" type="date"
+                                    id="start-date">
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <label for="end-date">End Date</label><br>
+                                <input class="date-input" type="date"
+                                    id="end-date">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div>
+                    <label for="desc">Description</label>
+                    <textarea name="" id="desc" cols="40" rows="4"></textarea>
+                </div>
+                <div>
+                    <p>Technologies</p>
+                    <table style="margin: -20px 0 0 -15px;">
+                        <tr>
+                            <td>
+                                <input class="tech-input" type="checkbox"
+                                    value="node-js" id="node-js"/>Node Js
+                            </td>
+                            <td>
+                                <input class="tech-input" type="checkbox"
+                                    value="laravel" id="laravel"/>Laravel
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="tech-input" type="checkbox"
+                                    value="react" id="react"/>React Js
+                            </td>
+                            <td>
+                                <input class="tech-input" type="checkbox"
+                                    value="golang" id="go"/>Golang
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </div>
+
+                <div>
+                    <label for="img">Upload Image</label>
+                    <div style="display: flex;" class="upload-img">
+                        <input type="file"  id="img" required>
+                        <i class="fa-solid fa-paperclip"></i>
+                    </div>
+                </div>
+                <div>
+                    <button type="button" onclick="addData()" class="button">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="container">
+            <h2>MY PROJECT</h2>
+            <div id="card" style="display: flex; justify-content:center;
+                flex-wrap:wrap">
+                <a href="detail.html" target="_blank">
+                    <div class="card">
+                        <div>
+                            <img style="
+                                width: 100%;
+                                border-radius: 10px;
+                                " src="assets/image/code.jpg" alt="code">
+                            <div class="card-text">
+                                <h3>Dumbways</h3>
+                                <p>Durasi: 3 bln</p>
+                            </div>
+                        </div>
+                        <div class="card-desc">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing
+                                elit.
+                                Ratione, commodi?</p>
+                            <div style="margin-bottom: 10px;">
+                                <i class="fa-brands fa-xl fa-node-js" size:20px></i>
+                                <i class="fa-brands fa-xl fa-laravel"></i>
+                                <i class="fa-brands fa-xl fa-react"></i>
+                                <i class="fa-brands fa-xl fa-golang"></i>
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content:center">
+                            <button class="button-edit">Edit</button>
+                            <button class="button-delete">Delete</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <script src="scripts/components/project.js"></script>
+    </body>
+</html>

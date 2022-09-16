@@ -1,0 +1,111 @@
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #c9cdceac;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    background-color: #e7ecedf6;
+    padding: 5px;
+    align-items: center;
+    height: 8vh;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+ul li {
+    margin: 25px;
+}
+
+a {
+    color: black;
+}
+
+ul li a:hover {
+    font-weight: bold;
+}
+
+li img {
+    width: 50px;
+}
+
+.navbar-left {
+    flex: 50%;
+}
+
+.navbar-right {
+    display: flex;
+    flex: 50%;
+    justify-content: end;
+    padding: 80px;
+}
+
+.navbar-right a:hover{
+    background-color: rgb(174, 176, 178);
+}
+
+.navbar-right a {
+    background-color: black;
+    padding: 8px 15px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+form{
+    width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+form h2{
+    text-align: center;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+form div{
+    margin-top: 20px;
+}
+
+label{
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: none;
+    resize: none;
+    box-shadow: 0 0 15px #a8a6a6;
+}
+
+div button{
+  padding: 4px 20px;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  background-color: black;
+  font-size: 15px;
+  font-weight: bold;
+  float: right;
+  cursor: pointer;
+}
+
+div button:hover{
+    background-color: rgb(174, 176, 178);
+}

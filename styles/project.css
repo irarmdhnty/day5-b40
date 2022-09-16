@@ -1,0 +1,211 @@
+* {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    background-color: #eaeeee;
+    font-family: cursive;
+}
+
+nav {
+    display: flex;
+    background-color: #e7ecedf6;
+    padding: 5px;
+    align-items: center;
+    height: 8vh;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+ul li {
+    margin: 25px;
+}
+
+a {
+    color: black;
+}
+
+ul li a:hover {
+    font-weight: bold;
+}
+
+li img {
+    width: 50px;
+}
+
+.navbar-left {
+    flex: 50%;
+}
+
+.navbar-right {
+    display: flex;
+    flex: 50%;
+    justify-content: end;
+    padding: 80px;
+}
+
+.navbar-right a:hover {
+    background-color: #aeb0b2;
+}
+
+.navbar-right a {
+    background-color: black;
+    padding: 8px 15px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 5px 15px;
+    height: 88vh;
+}
+
+form h2 {
+    text-align: center;
+}
+
+form div {
+    margin-top: 10px;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5px;
+    resize: none;
+    padding: 10px;
+    box-shadow: 0 0 10px grey;
+}
+
+.input-name {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    margin-top: 5px;
+    box-shadow: 0 0 10px grey;
+}
+
+.date-input {
+    display: flex;
+    width: 29vh;
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+    margin-top: 5px;
+    padding: 5px;
+    box-shadow: 0 0 10px grey;
+}
+
+.tech-input {
+    margin-top: -50px;
+    width: 30px;
+    padding: 10px;
+}
+
+table td{
+    margin-right: 30px;
+}
+
+.upload-img {
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    margin-top: 5px;
+    background-color: white;
+    box-shadow: 0 0 10px grey;
+    align-items: center;
+    padding-right: 5px;
+}
+
+.button {
+    padding: 4px 20px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+}
+
+div button:hover {
+    background-color: #aeb0b2;
+}
+
+.container {
+    height: 90vh;
+    background-color: #eaeeee;
+    padding: 30px;
+}
+
+div h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.card {
+    width: 300px;
+    background-color: white;
+    padding: 15px 5px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 0 10px grey;
+}
+
+.card-text {
+    background-color: white;
+    margin-top: -20px;
+    border-radius: 10px;
+}
+
+.card-text p {
+    margin-top: -20px;
+    font-size: 10px;
+    color: gray;
+}
+
+.card-desc p {
+    font-size: 13px;
+    margin-top: 0px;
+}
+
+.button-edit {
+    padding: 4px 20px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    font-weight: bold;
+    width: 50%;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.button-delete {
+    padding: 4px 20px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 45%;
+}
+
+input[type=file] {
+    width: 100%;
+    color: transparent;
+} 
