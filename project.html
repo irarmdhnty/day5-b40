@@ -30,12 +30,11 @@
         </nav>
 
         <div style="background-color: #d7ddde;">
-            <form>
+            <form onsubmit="addData(event)">
                 <h2>ADD MY PROJECT</h2>
                 <div>
                     <label for="input-name">Project Name</label>
-                    <input class="input-name" type="text" id="input-name"
-                        required>
+                    <input class="input-name" type="text" id="input-name" required>
                 </div>
                 <table>
                     <tr>
@@ -83,10 +82,7 @@
                             </td>
                         </tr>
                     </table>
-
-
                 </div>
-
                 <div>
                     <label for="img">Upload Image</label>
                     <div style="display: flex;" class="upload-img">
@@ -95,7 +91,7 @@
                     </div>
                 </div>
                 <div>
-                    <button type="button" onclick="addData()" class="button">Submit</button>
+                    <button class="button">Submit</button>
                 </div>
             </form>
         </div>

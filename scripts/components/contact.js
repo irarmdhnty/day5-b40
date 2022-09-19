@@ -23,12 +23,9 @@ function submitData(){
         return alert('Message wajib di isi');
     }
 
-    //menghubungkan js ke email
-
     let receiver = 'maudy@gmail.com'
 
     let mail = document.createElement('a')
     mail.href = `mailto:${receiver}?subject=${subject}&body=Hello my name ${name}, ${message}, let's talk with me asap ${phone}`
     mail.click()
-
 }
